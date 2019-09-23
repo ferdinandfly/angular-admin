@@ -1,0 +1,9 @@
+<mat-drawer-container class="application-container">
+    <mat-drawer mode="side" opened class="application-sidebar">
+        <app-sidebar [data]="sidebarMenu"></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+        <p>application works!</p>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

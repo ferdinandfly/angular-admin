@@ -1,0 +1,18 @@
+{
+  "APP_NAME": "visitdata",
+  "About": "A propos",
+  "Hello world !": "Bonjour le monde !",
+  "Home": "Accueil",
+  "Logged in as": "Connecté en tant que",
+  "Login": "SE CONNECTER",
+  "Logout": "Déconnexion",
+  "Password": "Mot de passe",
+  "Password is required": "Mot de passe requis",
+  "Username": "Identifiant",
+  "Username is required": "Identifiant requis",
+  "Username or password incorrect.": "Identifiant ou mot de passe incorrect.",
+  "Remember me": "Se souvenir de moi",
+  "Version": "Version",
+  "profile": "Mon compte",
+  "change password": "Changer mot de passe"
+}

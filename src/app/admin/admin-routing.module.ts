@@ -3,12 +3,24 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { extract } from '@app/core';
 import { AdminComponent } from './admin.component';
+
 import { Shell } from '@app/shell/shell.service';
 
 const routes: Routes = [
   Shell.childRoutes([
-    { path: 'admin', component: AdminComponent, data: { title: extract('Administration'), breadcrumb: extract('Administration') } }
-  ])
+    { 
+      path: 'admin', 
+      component: AdminComponent, 
+      data: { title: extract('Administration'), 
+      breadcrumb: extract('Administration') } ,
+      children: [
+       {  
+         path: 'organization',
+         loadChildren: () => import(`./organization/organization.module`).then(m => m.OrganizationModule),
+        } 
+      ]
+  },
+  ]),
 ];
 
 @NgModule({
@@ -16,4 +28,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class AdminRoutingModule {}
+export class AdminRoutingModule { }

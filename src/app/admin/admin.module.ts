@@ -8,9 +8,12 @@ import { SharedModule } from '@app/shared';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
 
+import {OrganizationModule } from './organization/organization.module';
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, MatSidenavModule,
-    SharedModule, AdminRoutingModule],
+    SharedModule, 
+    OrganizationModule,
+    AdminRoutingModule],
   declarations: [AdminComponent]
 })
 export class AdminModule { }
